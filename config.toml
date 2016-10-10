@@ -1,3 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-title = "Cours LP IMASH 2017"
+baseurl = "http://lpimash.revollat.net/"
+title = "test"
+DefaultContentLanguage = "fr"
 languageCode = "fr-fr"
