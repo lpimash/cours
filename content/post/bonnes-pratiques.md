@@ -28,7 +28,7 @@ draft = false
 
 ## Quelques principes pour coder proprement
 
-> _On reconnait instinctivement du code "propre", Cependant, être capable de faire cette différence ne signifie pas être capable de le faire._
+> _On reconnait instinctivement du code "propre", Cependant, être capable de faire cette différence ne signifie pas automatiquement qu'on est capable d'ecrire du code propre._
 
 ### Nom des variables et fonctions
 
@@ -75,7 +75,7 @@ Une fonction doit faire UNE SEULE chose et le faire BIEN !
 Un commentaire devrait expliquer le "pourquoi" d'une ou plusieurs lignes de code et pas le comment. Si vous devez expliqer "comment" chaque ligne de votre algo focntionne, c'est surement que votre code est trop complexe.
 
 metadata : PHPDoc et Annotations
-Exercice ajouter PHPDoc dans une fonction ecrite
+Exercice ajouter PHPDoc dans une fonction que vous avez déja ecrite
 
 ### Utilisez UTF-8
 
