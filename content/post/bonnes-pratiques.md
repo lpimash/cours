@@ -43,11 +43,12 @@ $d; // Temps écoulé en jours.
 
 $elapsedTimeInDays;
 
-// Pour les focntions, nous devons choisir des verbes ou des groupes verbaux comme postPayment ,  deletePage ou  save
+// Pour les fonctions, nous devons choisir des verbes ou des groupes verbaux comme postPayment ,  deletePage ou  save
 
 ```
 
-### Indentation du code
+### Indentation du code et coding standards
+
 ```php
 $Count = 1;while ($Count <= 3)
 {print('Hello World!');$Count = $Count + 1;
@@ -62,6 +63,22 @@ while ($Count <= 3) {
 }
 ```
 
-fonctions
-commentaire
-gestion de erreurs
+http://www.phptherightway.com/#code_style_guide
+demo de http://cs.sensiolabs.org/ ?
+
+### Fonctions
+
+Une fonction doit faire UNE SEULE chose et le faire BIEN !
+
+### Commentaires
+
+Un commentaire devrait expliquer le "pourquoi" d'une ou plusieurs lignes de code et pas le comment. Si vous devez expliqer "comment" chaque ligne de votre algo focntionne, c'est surement que votre code est trop complexe.
+
+metadata : PHPDoc et Annotations
+Exercice ajouter PHPDoc dans une fonction ecrite
+
+### Utilisez UTF-8
+
+### Conclusion : Comment ecrire du bon code
+
+http://imgs.xkcd.com/comics/good_code.png
