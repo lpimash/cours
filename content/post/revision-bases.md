@@ -186,6 +186,69 @@ return ($a == 3) ? true : false;
 
 ```
 
+## Tableaux
+
+```
+<?php
+
+// Create an array.
+$pandas = array('Lushui', 'Jasmina', 'Pali');
+
+// Create an array as well.
+$pandas = ['Lushui', 'Jasmina', 'Pali'];
+```
+
+```
+<?php
+
+// Create an of pandas.
+$pandas = ['Lushui', 'Jasmina', 'Pali'];
+
+// Fetch our pandas into separate variables.
+$lushui     = $pandas[0];
+$jasmina    = $pandas[1];
+$pali       = $pandas[2];
+```
+
+```
+<?php
+
+// Create an of pandas.
+$pandas = ['Lushui', 'Jasmina', 'Pali'];
+
+// Fetch a panda that doesn't exist.
+$fakePanda = $pandas[3];
+
+// Dump the result.
+echo $fakePanda;
+
+// ==> PHP Notice:  Undefined offset: 3
+```
+
+```
+<?php
+
+// Create an associative array.
+$numbers = [
+    'one'       => 1,
+    'two'       => 2,
+    'three'     => 3,
+    'four'      => 4,
+    'five'      => 5,
+    'six'       => 6
+];
+```
+
+```
+<?php
+
+// Create a multi-dimensional array.
+$numbers = [
+    'prime'         => [2, 3, 5, 7, 11],
+    'fibonacci'     => [1, 1, 2, 3, 5],
+    'triangular'    => [1, 3, 6, 10, 15]
+];
+```
 ## Boucles
 
 ### while
