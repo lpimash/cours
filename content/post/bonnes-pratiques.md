@@ -68,17 +68,72 @@ demo de http://cs.sensiolabs.org/ ?
 
 ### Fonctions
 
-Une fonction doit faire UNE SEULE chose et le faire BIEN !
+Une fonction devrait faire UNE SEULE chose et le faire BIEN !
 
 ### Commentaires
 
-Un commentaire devrait expliquer le "pourquoi" d'une ou plusieurs lignes de code et pas le comment. Si vous devez expliqer "comment" chaque ligne de votre algo focntionne, c'est surement que votre code est trop complexe.
+Un commentaire devrait expliquer le "pourquoi" d'une ou plusieurs lignes de code et pas le "comment". Si vous devez expliquer "comment" chaque ligne fonctionne, c'est surement que votre code est trop complexe.
 
-metadata : PHPDoc et Annotations
-Exercice ajouter PHPDoc dans une fonction que vous avez déja ecrite
+#### Commentaires comme Meta-donnée
+
+##### PHPDoc
+
+```
+/** <--- Commence par
+*/  <--- Se termine par
+```
+
+```php
+/**
+ * Counts the number of items in the provided array.
+ *
+ * @param mixed[] $items Array structure to count the elements of.
+ *
+ * @return int Returns the number of elements.
+ */
+function count(array $items)
+{
+    // <...CODE ...>
+}
+```
+
+**Exercice ajouter PHPDoc dans une fonction que vous avez déja ecrite**
+
+##### Annotations
+
+```php
+/**
+ * Lieu
+ *
+ * @ORM\Table()
+ * @ORM\Entity
+ */
+class Lieu
+{
+    /**a tu
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     * @ORM\Column(name="nom", type="string", length=255)
+     */
+    private $nom;
+
+	// ...
+
+}
+```
+
+
 
 ### Utilisez UTF-8
 
 ### Conclusion : Comment ecrire du bon code
 
-http://imgs.xkcd.com/comics/good_code.png
+![xkcd](http://imgs.xkcd.com/comics/good_code.png)
