@@ -42,7 +42,7 @@ Utilisez htmlentities()
 <?php
 $input = '<p><script>alert("You won the Nigerian lottery!");</script></p>';
 echo htmlentities($input, ENT_QUOTES, 'UTF-8');
-
+// ==> ENT_QUOTES echappe les simple et double quote
 ```
 
 Si vous voulez un filtrage plus fin i.e. autoriser que certaine balise html dans vos commentaires par exemple, il faudra utiliser une librairie comme http://htmlpurifier.org/
@@ -109,3 +109,18 @@ bool(false)
 
 string(16) "john@example.com"
 ```
+
+Pour plus de souplesse/possibilités utiliser un composant comme https://packagist.org/packages/symfony/validator
+
+## Echappement des caractères pour l'affichage
+
+faire en sorte que l'orsque l'on affiche un contenu potentiellement malvaillent ne soit pas executé/interprété (du code javascript indésirable par exemple)
+
+```
+<?php
+$input = '<p><script>alert("You won the Nigerian lottery!");</script></p>';
+echo htmlentities($input, ENT_QUOTES, 'UTF-8');
+// ==> ENT_QUOTES echappe les simple et double quote
+```
+
+Par défaut des moteur de template comme twig echappent tout les contenus affichés à l'ecran automatiquement.
