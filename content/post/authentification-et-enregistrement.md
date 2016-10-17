@@ -13,8 +13,9 @@ CREATE TABLE `utilisateur` (
   `nom` varchar(1000) NOT NULL,
   `prenom` varchar(1000) NOT NULL,
   `mail` varchar(1000) NOT NULL,
+  `password` varchar(1000) NOT NULL,
   PRIMARY KEY (`id`)
 ) DEFAULT CHARSET=utf8;
 ```
 
-Pour le code cf. Exo registration-1,2,....php 
+Pour le code cf. Exo registration-1,2,....php

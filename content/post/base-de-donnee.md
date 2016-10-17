@@ -14,18 +14,15 @@ Ne partez pas en courant ... En fait c'est très simple ... :)
 <?php
 try {
 
-    $pdo = new PDO(
+  $pdo = new PDO(
     'mysql:host=127.0.0.1;dbname=c9;port=3306;charset=utf8', // DSN a.k.a Data Source Name
     'o_revollat',
     ''
-);
+  );
 
 } catch (PDOException $e) { // Gérer le erreur de connexion avec un message bien présenté et eviter la divulgation d'informations sensibles
-
-    // Database connection failed
-    echo "Database connection failed";
+    echo "Connexion à la base de donnée échouée";
     exit;
-
 }
 ```
 
