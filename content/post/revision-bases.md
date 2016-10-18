@@ -1,7 +1,7 @@
 +++
 date = "2016-10-11T16:43:43+02:00"
 title = "revision bases"
-draft = true
+draft = false
 
 +++
 

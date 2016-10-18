@@ -1,6 +1,6 @@
 +++
 date = "2016-10-14T10:47:36+02:00"
-draft = true
+draft = false
 title = "gestion des dates"
 
 +++
