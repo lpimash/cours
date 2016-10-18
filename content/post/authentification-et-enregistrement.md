@@ -1,6 +1,6 @@
 +++
 title = "authentification et enregistrement"
-draft = true
+draft = false
 date = "2016-10-14T14:25:39+02:00"
 
 +++
