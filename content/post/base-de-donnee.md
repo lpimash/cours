@@ -54,7 +54,7 @@ on utilise la methode fetch de l'objet requete
 $sql = 'SELECT id, email FROM users WHERE email = :email';
 $statement = $pdo->prepare($sql);
 $email = filter_input(INPUT_GET, 'email');
-$statement->bindValue(':email', $email, PDO::PARAM_INT);
+$statement->bindValue(':email', $email);
 
 $statement->execute();
 

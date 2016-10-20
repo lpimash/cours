@@ -6,6 +6,7 @@ date = "2016-10-13T16:07:50+02:00"
 +++
 
 La régle numéro 1 du Developper Club est : ne Jamais faire confiance aux données qui ne sont pas sous votre controle !
+
 La régle numéro 2 du Developper Club est : ne Jamais faire confiance aux données qui ne sont pas sous votre controle !
 
 * $_GET
